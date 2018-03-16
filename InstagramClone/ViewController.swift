@@ -14,11 +14,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet var userTextField: UITextField!
     @IBOutlet var messageTextField: UITextField!
     @IBOutlet var imageView: UIImageView!
-    private var ref: DatabaseReference!
-    private var storage: Storage!
     
     private let textFieldDelegate = TextFieldDelegate()
-    private var profile = Profile()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +34,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerController(_: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             imageView.image = image
-            profile.photoImage = image
         }
         dismiss(animated: true, completion: nil)
     }

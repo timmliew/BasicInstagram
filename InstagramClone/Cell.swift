@@ -22,7 +22,7 @@ class Cell: UITableViewCell {
         }
     }
     
-    func updateUI(){
+    private func updateUI(){
         self.message.text = post.caption
         self.username.text = post.userName
         

@@ -9,13 +9,6 @@
 import UIKit
 import Firebase
 
-struct Profile {
-    var name = ""
-    var text = ""
-    var imageLink = ""
-    var photoImage = UIImage(named: "user")
-}
-
 class HomeTableViewController: UITableViewController {
 
     private var posts = [Posts]()
