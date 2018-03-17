@@ -15,13 +15,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet var messageTextField: UITextField!
     @IBOutlet var imageView: UIImageView!
     
-    private let textFieldDelegate = TextFieldDelegate()
+    private let textDelegate = TextFieldDelegate()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        userTextField.delegate = self.textFieldDelegate
-        messageTextField.delegate = self.textFieldDelegate
+        self.messageTextField.delegate = textDelegate
+        self.userTextField.delegate = textDelegate
     }
 
     override func didReceiveMemoryWarning() {

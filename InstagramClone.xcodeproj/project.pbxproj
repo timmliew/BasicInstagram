@@ -17,7 +17,7 @@
 		D8463AA1205AFA9600DDF9A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8463A9F205AFA9600DDF9A6 /* LaunchScreen.storyboard */; };
 		D8463AAD205AFFAF00DDF9A6 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8463AAC205AFFAF00DDF9A6 /* HomeTableViewController.swift */; };
 		D8463AAF205B041700DDF9A6 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8463AAE205B041700DDF9A6 /* Cell.swift */; };
-		D8463AB3205B5B0600DDF9A6 /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8463AB2205B5B0600DDF9A6 /* TextFieldDelegate.swift */; };
+		D8D68FBF205CB94400D5E2C2 /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D68FBE205CB94400D5E2C2 /* TextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		D8463AA2205AFA9600DDF9A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8463AAC205AFFAF00DDF9A6 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		D8463AAE205B041700DDF9A6 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
-		D8463AB2205B5B0600DDF9A6 /* TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
+		D8D68FBE205CB94400D5E2C2 /* TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 				D8463AAE205B041700DDF9A6 /* Cell.swift */,
 				D80F2DF4205C4EA700850EB7 /* Posts.swift */,
 				D8463AAC205AFFAF00DDF9A6 /* HomeTableViewController.swift */,
-				D8463AB2205B5B0600DDF9A6 /* TextFieldDelegate.swift */,
+				D8D68FBE205CB94400D5E2C2 /* TextFieldDelegate.swift */,
 				D8463A98205AFA9600DDF9A6 /* ViewController.swift */,
 				D8463A9A205AFA9600DDF9A6 /* Main.storyboard */,
 				D8463A9D205AFA9600DDF9A6 /* Assets.xcassets */,
@@ -243,9 +243,9 @@
 			files = (
 				D8463AAD205AFFAF00DDF9A6 /* HomeTableViewController.swift in Sources */,
 				D80F2DF5205C4EA700850EB7 /* Posts.swift in Sources */,
+				D8D68FBF205CB94400D5E2C2 /* TextFieldDelegate.swift in Sources */,
 				D8463AAF205B041700DDF9A6 /* Cell.swift in Sources */,
 				D8463A99205AFA9600DDF9A6 /* ViewController.swift in Sources */,
-				D8463AB3205B5B0600DDF9A6 /* TextFieldDelegate.swift in Sources */,
 				D8463A97205AFA9600DDF9A6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
