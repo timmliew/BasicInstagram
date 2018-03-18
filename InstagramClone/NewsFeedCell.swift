@@ -51,7 +51,6 @@ class NewsFeedCell: UITableViewCell {
     @IBAction func favoriteAction(_ sender: Any) {
         let image: UIImage!
         isPressed = !isPressed
-
         if isPressed {
             image = UIImage(named:"heart-colored-icon")
             favoriteButton.setImage(image, for: .normal)
@@ -73,7 +72,7 @@ class NewsFeedCell: UITableViewCell {
                 ref.child(self.post.postId).updateChildValues(updateLikes, withCompletionBlock: { (error, reff) in
                     
                     if error == nil {
-                        ref.child("photoPosts").child(self.post.postId).observeSingleEvent(of: .value, with: { (snap) in
+                        ref.child(self.post.postId).observeSingleEvent(of: .value, with: { (snap) in
                             if let properties = snap.value as? [String : AnyObject] {
                                 if let likes = properties["peopleWhoLike"] as? [String : AnyObject] {
                                     print("liked success")
