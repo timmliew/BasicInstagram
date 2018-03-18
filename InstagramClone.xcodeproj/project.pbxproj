@@ -11,13 +11,15 @@
 		D80F2DF5205C4EA700850EB7 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80F2DF4205C4EA700850EB7 /* Posts.swift */; };
 		D8302677205C2AE3006ED303 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8302676205C2AE3006ED303 /* GoogleService-Info.plist */; };
 		D8463A97205AFA9600DDF9A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8463A96205AFA9600DDF9A6 /* AppDelegate.swift */; };
-		D8463A99205AFA9600DDF9A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8463A98205AFA9600DDF9A6 /* ViewController.swift */; };
+		D8463A99205AFA9600DDF9A6 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8463A98205AFA9600DDF9A6 /* UploadViewController.swift */; };
 		D8463A9C205AFA9600DDF9A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8463A9A205AFA9600DDF9A6 /* Main.storyboard */; };
 		D8463A9E205AFA9600DDF9A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8463A9D205AFA9600DDF9A6 /* Assets.xcassets */; };
 		D8463AA1205AFA9600DDF9A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8463A9F205AFA9600DDF9A6 /* LaunchScreen.storyboard */; };
 		D8463AAD205AFFAF00DDF9A6 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8463AAC205AFFAF00DDF9A6 /* HomeTableViewController.swift */; };
-		D8463AAF205B041700DDF9A6 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8463AAE205B041700DDF9A6 /* Cell.swift */; };
+		D8463AAF205B041700DDF9A6 /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8463AAE205B041700DDF9A6 /* NewsFeedCell.swift */; };
+		D8AEDA4F205DA34800D87A79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEDA4E205DA34800D87A79 /* LoginViewController.swift */; };
 		D8D68FBF205CB94400D5E2C2 /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D68FBE205CB94400D5E2C2 /* TextFieldDelegate.swift */; };
+		D8DB8910205D897400551EB7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DB890F205D897400551EB7 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,14 +30,16 @@
 		D8302676205C2AE3006ED303 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D8463A93205AFA9500DDF9A6 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8463A96205AFA9600DDF9A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8463A98205AFA9600DDF9A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8463A98205AFA9600DDF9A6 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		D8463A9B205AFA9600DDF9A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8463A9D205AFA9600DDF9A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8463AA0205AFA9600DDF9A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8463AA2205AFA9600DDF9A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8463AAC205AFFAF00DDF9A6 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
-		D8463AAE205B041700DDF9A6 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		D8463AAE205B041700DDF9A6 /* NewsFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
+		D8AEDA4E205DA34800D87A79 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D8D68FBE205CB94400D5E2C2 /* TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
+		D8DB890F205D897400551EB7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,12 +92,11 @@
 		D8463A95205AFA9500DDF9A6 /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				D8AEDA50205DA35400D87A79 /* ViewControllers */,
 				D8463A96205AFA9600DDF9A6 /* AppDelegate.swift */,
-				D8463AAE205B041700DDF9A6 /* Cell.swift */,
 				D80F2DF4205C4EA700850EB7 /* Posts.swift */,
-				D8463AAC205AFFAF00DDF9A6 /* HomeTableViewController.swift */,
+				D8463AAE205B041700DDF9A6 /* NewsFeedCell.swift */,
 				D8D68FBE205CB94400D5E2C2 /* TextFieldDelegate.swift */,
-				D8463A98205AFA9600DDF9A6 /* ViewController.swift */,
 				D8463A9A205AFA9600DDF9A6 /* Main.storyboard */,
 				D8463A9D205AFA9600DDF9A6 /* Assets.xcassets */,
 				D8463A9F205AFA9600DDF9A6 /* LaunchScreen.storyboard */,
@@ -101,6 +104,17 @@
 				D8302676205C2AE3006ED303 /* GoogleService-Info.plist */,
 			);
 			path = InstagramClone;
+			sourceTree = "<group>";
+		};
+		D8AEDA50205DA35400D87A79 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8AEDA4E205DA34800D87A79 /* LoginViewController.swift */,
+				D8463AAC205AFFAF00DDF9A6 /* HomeTableViewController.swift */,
+				D8463A98205AFA9600DDF9A6 /* UploadViewController.swift */,
+				D8DB890F205D897400551EB7 /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +196,9 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-InstagramClone/Pods-InstagramClone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -190,6 +207,9 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -244,8 +264,10 @@
 				D8463AAD205AFFAF00DDF9A6 /* HomeTableViewController.swift in Sources */,
 				D80F2DF5205C4EA700850EB7 /* Posts.swift in Sources */,
 				D8D68FBF205CB94400D5E2C2 /* TextFieldDelegate.swift in Sources */,
-				D8463AAF205B041700DDF9A6 /* Cell.swift in Sources */,
-				D8463A99205AFA9600DDF9A6 /* ViewController.swift in Sources */,
+				D8463AAF205B041700DDF9A6 /* NewsFeedCell.swift in Sources */,
+				D8AEDA4F205DA34800D87A79 /* LoginViewController.swift in Sources */,
+				D8DB8910205D897400551EB7 /* ProfileViewController.swift in Sources */,
+				D8463A99205AFA9600DDF9A6 /* UploadViewController.swift in Sources */,
 				D8463A97205AFA9600DDF9A6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
