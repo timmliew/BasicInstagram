@@ -21,6 +21,7 @@ class NewsFeedCell: UITableViewCell {
     @IBOutlet var favoriteButton: UIButton!
     private var isPressed = false
     private let selfId = Auth.auth().currentUser?.uid
+    private let imageCache = NSCache<AnyObject, AnyObject>()
     var delegate: NewsFeedCellProtocol!
 
     var post: Posts! {
@@ -32,15 +33,23 @@ class NewsFeedCell: UITableViewCell {
     private func updateUI(){
         self.message.text = post.caption
         self.userName.setTitle(post.userName, for: .normal)
+
         
         if let imageURL = post.imageURL {
-            let downloadTask = Storage.storage().reference(forURL: imageURL).getData(maxSize: 2 * 1024 * 1024) { data, error in
-                if let error = error {
-                    print("There is an error downloading image! : \(error)")
-                } else {
-                    print("Image downloaded successfully!")
-                    DispatchQueue.main.async {
-                        self.postedImageView.image = UIImage(data: data!)
+            
+            if let imageFromCache = imageCache.object(forKey: imageURL as AnyObject) as? UIImage {
+                self.postedImageView.image = imageFromCache
+            } else {
+                Storage.storage().reference(forURL: imageURL).getData(maxSize: 2 * 1024 * 1024) { data, error in
+                    if let error = error {
+                        print("There is an error downloading image! : \(error)")
+                    } else {
+                        print("Image downloaded successfully!")
+                        let image = UIImage(data: data!)
+                        DispatchQueue.main.async {
+                            self.imageCache.setObject(image!, forKey: imageURL as AnyObject)
+                            self.postedImageView.image = image
+                        }
                     }
                 }
             }
@@ -128,7 +137,6 @@ class NewsFeedCell: UITableViewCell {
                         }
                     })
                     break
-                    
                 } else {
                     print("different person")
                 }

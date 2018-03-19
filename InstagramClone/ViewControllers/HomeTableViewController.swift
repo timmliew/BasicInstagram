@@ -24,8 +24,7 @@ class HomeTableViewController: UITableViewController, NewsFeedCellProtocol {
         self.tableView.addSubview(refreshControl)
         
         refreshControl.addTarget(self, action: #selector(handleRefresh(_:)), for: .valueChanged)
-        
-        
+                
         Database.database().reference().child("photoPosts").observe(.childAdded)
         {(snapshot) in
             
@@ -34,8 +33,6 @@ class HomeTableViewController: UITableViewController, NewsFeedCellProtocol {
                 self.posts.insert(newPost, at: 0)
                 let indexPath = IndexPath(row: 0, section: 0)
                 self.tableView.insertRows(at: [indexPath], with: .top)
-
-                
                 self.tableView.estimatedRowHeight = 578.0
                 self.tableView.rowHeight = UITableViewAutomaticDimension
             }
