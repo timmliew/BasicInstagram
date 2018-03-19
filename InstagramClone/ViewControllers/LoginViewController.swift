@@ -60,6 +60,7 @@ class LoginViewController: UIViewController {
                 }
                 if let user = user {
                     print("login success")
+                    print(Auth.auth().currentUser?.uid)
                     // Get the storyboard and HomeTableViewController
                     let storyboard = UIStoryboard (name: "Main", bundle: nil)
                     let home = storyboard.instantiateViewController(withIdentifier: "TarBarController") as! UITabBarController

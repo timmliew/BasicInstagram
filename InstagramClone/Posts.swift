@@ -16,6 +16,7 @@ class Posts {
     var imageURL: String!
     var postId: String!
     var userId: String!
+    var likes: Int!
     private var image: UIImage!
     
     init(userName: String, image: UIImage, caption: String){
@@ -32,6 +33,7 @@ class Posts {
         self.caption = json["caption"].stringValue
         self.postId = json["postId"].stringValue
         self.userId = json["userId"].stringValue
+        self.likes = json["likes"].int
     }
     
     func save() {
