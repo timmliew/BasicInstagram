@@ -13,7 +13,6 @@ import FBSDKLoginKit
 
 class UploadViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     
-    @IBOutlet var userTextField: UITextField!
     @IBOutlet var messageTextField: UITextField!
     @IBOutlet var imageView: UIImageView!
     
@@ -24,7 +23,6 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.messageTextField.delegate = textDelegate
-        self.userTextField.delegate = textDelegate
         
         if ( FBSDKAccessToken.current() != nil ) {
             // User is logged in, use 'accessToken' here.

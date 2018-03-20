@@ -24,6 +24,7 @@ class Posts {
         self.image = image
         self.caption = caption
         self.userId = Auth.auth().currentUser!.uid
+        self.likes = 0
     }
     
     init(snapshot: DataSnapshot) {
@@ -56,8 +57,9 @@ class Posts {
                         "userName": self.userName,
                         "imageURL": self.imageURL,
                         "caption": self.caption,
-                        "postId":newPostKey
-                    ]
+                        "postId":newPostKey,
+                        "likes": self.likes
+                        ] as [String : Any]
                     newPostRef.setValue(newPostDic)
             })
         }
